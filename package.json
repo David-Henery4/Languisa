@@ -1,0 +1,17 @@
+{
+  "name": "languisa-v.1",
+  "version": "1.0.0",
+  "description": "Language-Learning-site",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir./dist"
+  },
+  "author": "David Henery",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0",
+    "sass": "^1.52.0"
+  }
+}
