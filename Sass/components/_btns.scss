@@ -1,0 +1,15 @@
+.btn{
+    background-color: transparent;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+}
+
+.cta-btn{
+    background-color: $primary-color;
+    color: $almost-white;
+    padding: 1.2rem 3.5rem;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
