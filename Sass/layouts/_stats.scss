@@ -1,0 +1,17 @@
+.stats{
+    padding: 5%;
+    text-align: center;
+    background-color: $primary-color;
+    &__group{
+        margin: 6rem 0;
+        font-size: 1.8rem;
+        h4{
+            color: $almost-white;
+            font-weight: 300;
+        }
+        p{
+            margin-top: 4rem;
+            color: $secondary-color;
+        }
+    }
+}
