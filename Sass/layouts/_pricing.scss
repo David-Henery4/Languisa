@@ -22,5 +22,11 @@
         &--2{
             margin: 6rem auto;
         }
+        &--1{
+            background-image: url("/svgs/card-background-blue.svg");
+        }
+        &--2{
+            background-image: url("/svgs/card-background-green.svg");
+        }
     }
 }

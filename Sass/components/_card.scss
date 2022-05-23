@@ -3,24 +3,21 @@
     height: 60rem;
     width: 100%;
     position: relative;
-    // margin: 0 auto;
     max-width: 440px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // margin: 0 auto;
     &__content{
-        height: 100%;
         width: 100%;
-    }
-    &__background{
-        position: absolute;
-        top: 0;
-        left: 0;
         height: 100%;
-        width: 100%;
-        object-fit: cover;
+        padding: 15% 5% 5%;
     }
 }
 
-@media (min-width:387px){
-    .card__background{
-        object-fit: contain;
-    }
+.pricing__cards--1{
+    background-image: url("/svgs/card-background-blue.svg");
+}
+
+.pricing__cards--2{
+    background-image: url("/svgs/card-background-green.svg");
 }
