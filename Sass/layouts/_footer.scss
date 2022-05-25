@@ -1,0 +1,46 @@
+.footer{
+    text-align: center;
+    background-color: $primary-color;
+    padding: 5%;
+    // Sign-up & socials
+    &-sign-up{
+        margin: 4rem 0;
+    }
+    &__title{
+        color: $almost-white;
+        font-weight: 300;
+        font-size: 3rem;
+    }
+    &__btn{
+        background-color: $flair-color;
+        font-size: 2rem;
+        margin: 4rem 0;
+    }
+    &__social-icons{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    // Footer Navigation Links
+    &-nav{
+        margin: 4rem 0;
+        &__title{
+            font-size: 3.2rem;
+            font-weight: 300;
+            color: $almost-white;
+            margin: 2rem 0;
+        }
+        &__list{
+            list-style-type: none;
+            &-item{
+                margin: 2rem 0;
+                font-size: 1.5rem;
+                a:link,
+                a:visited{
+                    text-decoration: none;
+                    color: $almost-white;
+                }
+            }
+        }
+    }
+}
