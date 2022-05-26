@@ -1,5 +1,8 @@
 html{
     font-size: 62.5%; // 1rem = 10px (Default was 16px)
+    @include respond (tab-port){
+        font-size: 75%;
+    }
 }
 
 body{
