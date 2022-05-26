@@ -1,0 +1,24 @@
+// Media Queries
+@mixin respond($breakpoint) {
+  @if ($breakpoint == tab-port) {
+    @media (min-width: 26.56em) {
+      @content;
+    }
+  }
+  // OTHERS GO HERE
+}
+
+// Images Queries
+@mixin responsiveImgs ($breakpoint) {
+  @if ($breakpoint == largeImg) {
+    @media only screen and (min-width: 60.31em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == resImg) {
+    @media only screen and (min-width: 26.56em) {
+      @content;
+    }
+  }
+  // 
+}

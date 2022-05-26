@@ -1,6 +1,6 @@
 .header {
   width: 100vw;
-  height: 75vh;
+  height: 85vh;
   padding: 5%;
   background: linear-gradient(rgba(21, 172, 202, 0.65),
   rgba(21, 172, 202, 0.65)),
@@ -15,6 +15,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  // Media Queries
+  @include responsiveImgs (resImg){
+  background-image: linear-gradient(rgba(21, 172, 202, 0.65),
+rgba(21, 172, 202, 0.65)),
+  url("/images/header-background-img-big.jpg");
+  background-position: 65% 100%;
+  }
+  //
+  @include responsiveImgs (largeImg){
+    background-image: linear-gradient(rgba(21, 172, 202, 0.65),
+  rgba(21, 172, 202, 0.65)),
+    url("/images/header-background-img-xl.jpg");
+    background-size: 100% 101%;
+  }
+  //
   &__title{
     font-size: 2.8rem;
     color: $secondary-color;
