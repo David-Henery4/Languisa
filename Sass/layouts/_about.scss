@@ -11,7 +11,8 @@
         }
     }
     &__content-container{
-        margin: 6rem 0;
+        margin: 6rem auto;
+        max-width: 45.5rem; // ???
     }
     &__content{
         padding: 0 1rem;

@@ -5,6 +5,16 @@
       @content;
     }
   }
+  @if ($breakpoint == tab-land) {
+    @media (min-width: 53.12em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == desk) {
+    @media (min-width: 64em) {
+      @content;
+    }
+  }
   // OTHERS GO HERE
 }
 

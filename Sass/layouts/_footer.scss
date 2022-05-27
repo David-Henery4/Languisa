@@ -4,7 +4,8 @@
     padding: 3rem;
     // Sign-up & socials
     &-sign-up{
-        margin: 4rem 0;
+        margin: 4rem auto;
+        max-width: 45.5rem;
     }
     &__title{
         color: $almost-white;
@@ -23,9 +24,10 @@
     }
     // Footer Navigation Links
     &-nav{
-        margin: 4rem 0;
+        margin: 4rem auto;
+        max-width: 45.5rem;
         &__title{
-            font-size: 3.2rem;
+            font-size: 2.4rem;
             font-weight: 300;
             color: $almost-white;
             margin: 2rem 0;
@@ -34,7 +36,8 @@
             list-style-type: none;
             &-item{
                 margin: 2rem 0;
-                font-size: 1.5rem;
+                font-size: 1.4rem;
+                font-weight: 300;
                 a:link,
                 a:visited{
                     text-decoration: none;
