@@ -7,9 +7,24 @@
 .half-circle{
     top: -2.6rem;
     left: 0rem;
+    @include respond (tab-land){
+            top: -3.7rem;
+        }
+        @include respond (lrg-desk){
+            top: -4.7rem;
+        }
     svg{
         width: 15rem;
         height: 15rem;
+        @include respond (tab-land){
+            width: 20rem;
+            height: 20rem;
+        }
+        @include respond (lrg-desk){
+            width: 25rem;
+            height:25rem;
+        }
+        
     }
 }
 .zig-zag{

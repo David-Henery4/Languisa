@@ -15,6 +15,11 @@
       @content;
     }
   }
+  @if ($breakpoint == lrg-desk) {
+    @media (min-width: 77.81em) { // 1245px width
+      @content;
+    }
+  }
   // OTHERS GO HERE
 }
 
