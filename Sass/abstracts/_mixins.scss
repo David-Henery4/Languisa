@@ -1,17 +1,17 @@
 // Media Queries
 @mixin respond($breakpoint) {
   @if ($breakpoint == tab-port) {
-    @media (min-width: 29em) {
+    @media (min-width: 29em) { //464px width
       @content;
     }
   }
   @if ($breakpoint == tab-land) {
-    @media (min-width: 53.12em) {
+    @media (min-width: 53.12em) { // 850px width
       @content;
     }
   }
   @if ($breakpoint == desk) {
-    @media (min-width: 64em) {
+    @media (min-width: 64em) { // 1024px width
       @content;
     }
   }
@@ -21,12 +21,12 @@
 // Images Queries
 @mixin responsiveImgs ($breakpoint) {
   @if ($breakpoint == largeImg) {
-    @media only screen and (min-width: 60.31em) {
+    @media only screen and (min-width: 60.31em) { // 965px width
       @content;
     }
   }
   @if ($breakpoint == resImg) {
-    @media only screen and (min-width: 26.56em) {
+    @media only screen and (min-width: 26.56em) { // 425px width
       @content;
     }
   }

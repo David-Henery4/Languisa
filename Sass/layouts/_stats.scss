@@ -2,9 +2,23 @@
     padding: 3rem;
     text-align: center;
     background-color: $primary-color;
+    @include respond (tab-land){
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 4rem;
+    }
     &__group{
         margin: 6rem 0;
         font-size: 1.8rem;
+        @include respond (tab-land){
+            margin: 6rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 400px;
+            width: 33.3%;
+        }
         h4{
             color: $almost-white;
             font-weight: 300;

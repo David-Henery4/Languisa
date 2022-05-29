@@ -2,10 +2,16 @@
     text-align: center;
     background-color: $primary-color;
     padding: 3rem;
+    @include respond (desk) {
+        display: flex;
+    }
     // Sign-up & socials
     &-sign-up{
-        margin: 4rem auto;
+        margin: 0 auto;
         max-width: 45.5rem;
+        @include respond (desk) {
+            order: 2;
+        }
     }
     &__title{
         color: $almost-white;
@@ -16,6 +22,9 @@
         background-color: $flair-color;
         font-size: 2rem;
         margin: 6rem 0;
+        @include respond (desk) {
+        margin: 9rem 0;
+        }
     }
     &__social-icons{
         width: 100%;
@@ -26,6 +35,21 @@
     &-nav{
         margin: 4rem auto;
         max-width: 45.5rem;
+        @include respond (desk) {
+            margin-top: 0;
+        }
+
+        &--1{
+            @include respond (desk) {
+                order: 1;
+            }
+        }
+        &--2{
+            @include respond (desk) {
+                order: 3;
+            }
+        }
+
         &__title{
             font-size: 2.4rem;
             font-weight: 300;
@@ -35,8 +59,8 @@
         &__list{
             list-style-type: none;
             &-item{
-                margin: 2rem 0;
-                font-size: 1.4rem;
+                margin: 1rem 0;
+                font-size: 1.2rem;
                 font-weight: 300;
                 a:link,
                 a:visited{

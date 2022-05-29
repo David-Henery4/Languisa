@@ -13,9 +13,18 @@
     &__content-container{
         margin: 6rem auto;
         max-width: 45.5rem; // ???
+        @include respond (tab-land){
+            max-width: 75rem;
+        }
     }
     &__content{
         padding: 0 1rem;
+        @include respond (tab-land){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
         // &-img{
             
         // }
@@ -23,9 +32,21 @@
             margin-top: 2.5rem;
             font-size: 1.2rem;
             line-height: 2rem;
+            @include respond (tab-land){
+                width: 50%;
+                margin: 0;
+            }
         }
     }
     &__content:not(:first-child){
         margin-top: 6rem;
+        @include respond (tab-land){
+            margin-top: 12rem;
+        }
+    }
+    &__content:nth-child(even){
+        @include respond (tab-land){
+            flex-direction: row-reverse;
+        }
     }
 }
