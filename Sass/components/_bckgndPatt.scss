@@ -5,20 +5,28 @@
 // ABOUT-SECTION BACKGROUND ICONS
 
 .half-circle{
-    top: -3.5rem;
-    left: 0;
+    top: -2.6rem;
+    left: 0rem;
+    svg{
+        width: 15rem;
+        height: 15rem;
+    }
 }
 .zig-zag{
-    top: 8rem;
+    top: 10rem;
     right: 2rem;
 }
 .triangle{
     bottom: 34%;
-    left: 2rem;
+    left: 3rem;
 }
 .dots{
-    bottom: -12rem;
-    right: 0;
+    bottom: -10rem;
+    right: -9rem;
+    svg{
+        height: 30rem;
+        width: 30rem;
+    }
 }
 
 // PRICING-SECTION BACKGROUND ICONS
