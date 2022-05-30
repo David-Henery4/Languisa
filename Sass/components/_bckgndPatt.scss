@@ -30,10 +30,20 @@
 .zig-zag{
     top: 10rem;
     right: 2rem;
+    @include respond (lrg-desk){
+        top: 8rem;
+        right: 4rem;
+    }
 }
 .triangle{
     bottom: 34%;
     left: 3rem;
+    @include respond (lrg-desk){
+        svg{
+            width: 6rem;
+            height: 6rem;
+        }
+    }
 }
 .dots{
     bottom: -10rem;
@@ -42,8 +52,53 @@
         height: 30rem;
         width: 30rem;
     }
+    @include respond (lrg-desk){
+        svg{
+            height: 36rem;
+            width: 36rem;
+        }
+    }
 }
 
 // PRICING-SECTION BACKGROUND ICONS
 
+.pricing{
+    &-icons {
+    position: absolute;
+    }
 
+    &-triangles {
+    top: -4rem;
+    right: -1rem;
+        svg{
+            height: 17rem;
+            width: 17rem;
+        }
+    @include respond (lrg-desk){
+        top: -1rem;
+        right: 2rem;
+            svg {
+                height: 25rem;
+                width: 25rem;
+            }
+        }
+    }
+
+    &-circle {
+    bottom: -6.4rem;
+    left: -17rem;
+    z-index: -1000;
+        svg{
+            width: 40rem;
+            height: 40rem;
+        }
+        @include respond(lrg-desk){
+            bottom: -6.4rem;
+            left: -10rem;
+            svg{
+                width: 55rem;
+                height: 55rem;
+            }
+        }
+    }
+}

@@ -15,6 +15,7 @@
         max-width: 45.5rem; // ???
         @include respond (tab-land){
             max-width: 75rem;
+            margin: 12rem auto 6rem;
         }
     }
     &__content{

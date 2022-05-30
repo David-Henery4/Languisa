@@ -37,25 +37,4 @@
       background-image: url("/svgs/card-background-green.svg");
     }
   }
-  // Background Icons
-  &-icons {
-    position: absolute;
-  }
-  &-triangles {
-    top: -4rem;
-    right: -1rem;
-    svg{
-      height: 17rem;
-      width: 17rem;
-    }
-  }
-  &-circle {
-    bottom: -64px;
-    left: -170px;
-    z-index: -1000;
-    svg{
-      width: 40rem;
-      height: 40rem;
-    }
-  }
 }
