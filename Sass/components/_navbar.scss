@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4rem;
+  padding: 0 3rem;
   &-left {
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@
   //
   &__logo{
     color: $secondary-color;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   // 
   &__links{
@@ -60,14 +60,17 @@
 }
 
 .burger {
+  width: 3.5rem;
   &__line { // Temp
     @include respond (tab-land){
       display: none;
     }
-    height: 3px;
-    width: 2rem;
-    background-color: $almost-white;
-    margin: 0.4rem 0;
+    width: 75%;
+    height: .3rem;
+    margin: .5rem auto;
     border-radius: 10px;
+    transition: all .2s;
+    position: relative;
+    background-color: $almost-white;
   }
 }

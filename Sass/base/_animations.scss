@@ -3,3 +3,35 @@
 @keyframes greetingHeader {
     
 }
+
+// BURGER ANIMATION CLASSESS
+
+.burger-line-1{
+    transition: all .2s;
+    transform: rotate(45deg);
+    top: .7rem;
+}
+.burger-line-2{
+    transition: all .2s;
+    opacity: 0;
+    bottom: 2px;
+}
+.burger-line-3{
+    transition: all .2s;
+    transform: rotate(-45deg);
+    bottom: .9rem;
+}
+
+// SIDE-NAV CLASSES
+
+.side-nav--active{
+    // display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: .1s ease-in;
+}
+
+.side-nav-wrap--active{
+    transform: translateX(0);
+    transition: .4s ease-in;
+}
