@@ -33,3 +33,13 @@ sideNavCloseIcon.addEventListener("click", () => {
     toggleSideNav();
     burgerAnimation()
 })
+//*********************************//
+
+const sidenavItems = document.querySelector(".side-nav__list");
+
+sidenavItems.addEventListener("click", (e) => {
+    const clicked = e.target.closest(".side-nav__link");
+    if (!clicked) return
+    burgerAnimation()
+    toggleSideNav()
+})
