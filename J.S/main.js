@@ -43,3 +43,6 @@ sidenavItems.addEventListener("click", (e) => {
     burgerAnimation()
     toggleSideNav()
 })
+
+//*****************************************************//
+
