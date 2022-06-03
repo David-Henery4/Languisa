@@ -46,3 +46,48 @@ sidenavItems.addEventListener("click", (e) => {
 
 //*****************************************************//
 
+const slides = document.querySelectorAll(".testimonial__slide");
+const leftArrow = document.querySelector(".testimonial__slide-left-arrow");
+const rightArrow = document.querySelector(".testimonial__slide-right-arrow");
+const dotsContainer = document.querySelector(".testimonial__slider-dots");
+let curSlide = 0;
+const maxSlide = slides.length;
+console.log(maxSlide)
+
+const goToSlide = (slide) => {
+    slides.forEach((s,i) => s.style.transform = `translateX(${125*(i - slide)}%)`)
+}
+
+const nextSlide = () => {
+    if (curSlide === maxSlide -1) {
+        curSlide = 0;
+    } else{
+        curSlide++
+    }
+    goToSlide(curSlide)
+    // activeDot(curSlide)
+}
+
+const prevSlide = () => {
+    if (curSlide === 0){
+        curSlide = maxSlide -1;
+    } else {
+        curSlide--;
+    }
+    goToSlide(curSlide)
+    // activeDots(curSlide)
+}
+
+rightArrow.addEventListener("click", () => {
+    nextSlide()
+})
+
+leftArrow.addEventListener("click", () => {
+    prevSlide()
+})
+
+const init = () => {
+    goToSlide(0)
+}
+
+init()
