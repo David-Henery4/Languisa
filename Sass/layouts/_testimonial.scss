@@ -44,6 +44,9 @@
         border-radius: 20rem;
         display: inline-block;
         margin: 0 1rem;
+        &-active{
+          border: .6rem solid $dark-grey;
+        }
       }
     }
   }
