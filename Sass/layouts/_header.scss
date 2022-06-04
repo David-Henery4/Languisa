@@ -34,17 +34,27 @@ rgba(21, 172, 202, 0.65)),
     font-size: 2.8rem;
     color: $secondary-color;
     letter-spacing: .6rem;
-    height: 9rem;
-    width: 25rem;
-    overflow: hidden;
+    height: 15rem;
+    width: 100%;
+    max-width: 650px;
+    // overflow: hidden; // was on
     position: relative;
   }
   //
   &__title-wrap{
-    display: flex;
-    gap: 5rem;
-    transform: translateX(0%);
-    animation: infinite 30s greetingHeaderBox ease-out;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-content: center;
+    //
+    // (OLD STYLES)
+    // display: flex; // was on
+    // gap: 5rem;
+    // transform: translateX(0%); // was on
+    // animation: infinite 30s greetingHeaderBox ease-out; // was on
   }
   &__title{
     font-weight: 300;

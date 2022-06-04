@@ -54,6 +54,7 @@ let curSlide = 0;
 const maxSlide = slides.length;
 console.log(maxSlide)
 
+
 const goToSlide = (slide) => {
     slides.forEach((s,i) => s.style.transform = `translateX(${125*(i - slide)}%)`)
     console.log(slide)
@@ -124,3 +125,30 @@ const init = () => {
 }
 
 init()
+
+// HEADER ANIMATION
+
+const hellos = document.querySelectorAll(".header__title-wrap")
+let currentGreeting = 0
+const maxGreatings = hellos.length
+
+const headerAni = (current) => {
+    console.log(hellos)
+    hellos.forEach((greeting, i) => 
+        greeting.style.transform = `translateX(${125 * (i - current)}%)`
+    )
+}
+
+// headerAni()
+
+const nextGreeting = () => {
+    if (currentGreeting > maxGreatings - 1){
+        currentGreeting = 0
+    } else {
+        currentGreeting++
+    }
+    headerAni(currentGreeting)
+}
+
+nextGreeting()
+// console.log(currentGreeting)
