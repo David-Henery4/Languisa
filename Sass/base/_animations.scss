@@ -127,3 +127,35 @@
 
 }
 
+@keyframes greetingTwo {
+    0%{
+        transform: translateX(0%);
+    }
+
+    25%{
+        transform: translateX(-125%);
+    }
+
+    50%{
+        transform: translateX((-250%));
+    }
+    50%{
+        transform: translateX((-250%));
+    }
+
+    50%{
+        transform: translateX(-375%);
+    }
+    50%{
+        transform: translateX(-375%);
+    }
+
+    75%{
+        transform: translateX(-500%);
+    }
+
+    100%{
+        transform: translateX((-625%));
+    }
+
+}
