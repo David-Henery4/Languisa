@@ -33,129 +33,21 @@
 
 // HEADER KEYFRAMES ANIMATION
 
-@keyframes greetingHeader {
-    0%{
-        transform: translateX(100%);
-    }
-    50%{
-        transform: translateX(0%);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
+.title-animation{
+    animation: normal headerTransition 2s ease-in-out;
 }
 
-
-@keyframes greetingHeaderBox {
+@keyframes headerTransition {
     0%{
         transform: translateX(0%);
     }
-    5%{
-        transform: translateX(0%);
-    }
-    10%{
-        transform: translateX(0%);
-    }
-    15%{
-        transform: translateX(0%);
-    }
-
-    20%{
-        transform: translateX(-120%);
-    }
-    25%{
-        transform: translateX(-120%);
-    }
-    30%{
-        transform: translateX(-120%);
-    }
-    35%{
-        transform: translateX(-120%);
-    }
-
-    40%{
-        transform: translateX(-240%);
-    }
-    45%{
-        transform: translateX(-240%);
-    }
     50%{
-        transform: translateX(-240%);
-    }
-    55%{
-        transform: translateX(-240%);
-    }
-
-    60%{
-        transform: translateX(-361%);
-    }
-    65%{
-        transform: translateX(-361%);
-    }
-    70%{
-        transform: translateX(-361%);
+        transform: translateX(-7%);
     }
     75%{
-        transform: translateX(-361%);
-    }
-
-    80%{
-        transform: translateX(-481%);
-    }
-    85%{
-        transform: translateX(-481%);
-    }
-    90%{
-        transform: translateX(-481%);
-    }
-    95%{
-        transform: translateX(-481%);
-    }
-
-    100%{
-        transform: translateX(-602%);
+        transform: translateX(2%);
     }
     100%{
-        transform: translateX(-602%);
-    }
-    100%{
-        transform: translateX(-602%);
-    }
-    100%{
-        transform: translateX(-602%);
-    }
-
-}
-
-@keyframes greetingTwo {
-    0%{
         transform: translateX(0%);
     }
-
-    25%{
-        transform: translateX(-125%);
-    }
-
-    50%{
-        transform: translateX((-250%));
-    }
-    50%{
-        transform: translateX((-250%));
-    }
-
-    50%{
-        transform: translateX(-375%);
-    }
-    50%{
-        transform: translateX(-375%);
-    }
-
-    75%{
-        transform: translateX(-500%);
-    }
-
-    100%{
-        transform: translateX((-625%));
-    }
-
 }
