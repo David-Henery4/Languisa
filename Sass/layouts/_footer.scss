@@ -31,6 +31,9 @@
         display: flex;
         justify-content: space-evenly;
     }
+    &__social-icon{
+        cursor: pointer;
+    }
     // Footer Navigation Links
     &-nav{
         margin: 4rem auto;

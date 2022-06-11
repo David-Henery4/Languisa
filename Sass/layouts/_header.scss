@@ -34,11 +34,9 @@ rgba(21, 172, 202, 0.65)),
     font-size: 2.8rem;
     color: $secondary-color;
     letter-spacing: .6rem;
-    // height: 100%;
-    // width: 100%;
-    height: 15rem; // when the main-container
-    width: 100%; // when the main-container
-    max-width: 650px; // when the main-container
+    height: 15rem;
+    width: 100%;
+    max-width: 650px; 
     // display: flex;
     overflow: hidden; // WAS ON
     position: relative;
@@ -49,39 +47,16 @@ rgba(21, 172, 202, 0.65)),
     width: 100%;
     display: grid;
     position: absolute; // WAS ON
-    // margin: 0 4rem;
     top: 0;
     left: 0;
     align-content: center;
     // transition: all 1s; // being added in J.S
-    //
-    // (SUPER OLD STYLES)
-    // display: flex; // was on
-    // gap: 5rem;
-    // transform: translateX(0%); // was on
-    // animation: infinite 30s greetingHeaderBox ease-out; // was on
   }
   &__title{
     font-weight: 300;
-    // animation: normal headerTransition 2s ease-in-out;
-    // margin-right: 6rem;
-    // position: absolute;
   }
-  .title--1{
-    // transform: translateX(100%);
-    // animation: infinite 4s greetingHeader ease-out;
-  }
-  // TRY GIVING INDIVIDUAL WIDTH & HEIGHT
-  .title--2,
-  .title--3,
-  .title--4,
-  .title--5,
-  .title--6{
-    // transform: translateX(100%);
-  }
-  //
+
   &__text {
-    // margin-top: 4rem;
     font-size: 1.8rem;
     p:first-child{
       margin-bottom: 1rem;
