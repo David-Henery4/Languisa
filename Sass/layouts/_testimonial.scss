@@ -27,10 +27,8 @@
     position: relative;
   }
   &__title {
-    font-size: 2.4rem;
-    font-weight: 300;
-    // margin-bottom: auto;
-    // margin: 2rem 0 auto;
+    font-size: $font-size-medium;
+    font-weight: 200;
   }
   &__slider {
     max-width: 55.5rem;
@@ -46,7 +44,6 @@
       height: 100%;
     }
     &-dots{
-      // margin: 2rem 0;
       position: absolute;
       left: 15%;
       right: 15%;
@@ -70,7 +67,7 @@
     height: 85%;
     letter-spacing: .1rem;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: $font-size-small;
     line-height: 2rem;
     position: absolute;
     display: flex;
@@ -78,16 +75,16 @@
     justify-content: center;
     align-items: center;
     transition: all 2s;
-    &--marks{
-      // position: relative;
-      // top: 2rem;
-    }
+    // &--marks{
+    //   // position: relative;
+    //   // top: 2rem;
+    // }
     &--text{
     margin: 3rem 0 2rem;
     }
     &--name{
       margin-top: 2rem;
-      font-size: 1.5rem;
+      font-size: $font-size-small;
     }
     &-left-arrow,
     &-right-arrow{
@@ -120,18 +117,3 @@
 
 
 
-.slide--1{
-  // transform: translateX(5rem);
-}
-.slide--2{
-  // transform: translateX(5rem);
-}
-.slide--3{
-  // transform: translateX(5rem);
-}
-.slide--4{
-  // transform: translateX(5rem);
-}
-.slide--5{
-  // transform: translateX(5rem);
-}

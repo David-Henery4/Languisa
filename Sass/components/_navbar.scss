@@ -13,7 +13,8 @@
   //
   &__logo{
     color: $secondary-color;
-    font-size: 2rem;
+    font-size: $font-size-medium;
+    font-weight: 200;
   }
   // 
   &__links{

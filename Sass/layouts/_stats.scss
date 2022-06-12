@@ -10,7 +10,8 @@
     }
     &__group{
         margin: 6rem 0;
-        font-size: 1.8rem;
+        font-size: $font-size-medium;
+        color: $almost-white;
         @include respond (tab-land){
             margin: 6rem auto;
             display: flex;
@@ -20,8 +21,7 @@
             width: 33.3%;
         }
         h4{
-            color: $almost-white;
-            font-weight: 300;
+            font-weight: 200;
         }
         p{
             margin-top: 4rem;

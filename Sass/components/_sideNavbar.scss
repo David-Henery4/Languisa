@@ -40,7 +40,8 @@
     &__logo{
         width: 100%;
         padding: 2rem;
-        font-size: 2rem;
+        font-size: $font-size-medium;
+        font-weight: 200;
         color: $secondary-color;
         text-align: center;
         border-bottom: 1px solid $almost-white;
@@ -54,7 +55,7 @@
             width: 100%;
             margin-bottom: 4rem;
             list-style: none;
-            font-size: 1.4rem;
+            font-size: $font-size-small;
             text-align: center;
             a:link,
             a:visited{

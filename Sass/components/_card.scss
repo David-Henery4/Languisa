@@ -14,11 +14,11 @@
   }
   &__title {
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: $font-size-large;
   }
   &__price {
-    font-size: 2.2rem;
-    font-weight: 300;
+    font-size: $font-size-medium;
+    font-weight: 200;
   }
   &__underline {
     height: 0.1rem;
@@ -34,7 +34,7 @@
       list-style-type: none;
       position: relative;
       margin-left: 2rem;
-      font-size: 1.2rem;
+      font-size: $font-size-small;
       p {
         display: inline;
       }
@@ -55,7 +55,7 @@
   }
   &__btn {
     color: $almost-white;
-    font-size: 1.7rem;
+    font-size:$font-size-medium;
     border: 3px solid $almost-white;
   }
 }

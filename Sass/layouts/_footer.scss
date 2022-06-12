@@ -16,11 +16,11 @@
     &__title{
         color: $almost-white;
         font-weight: 300;
-        font-size: 2.8rem;
+        font-size: $font-size-large;
     }
     &__btn{
         background-color: $flair-color;
-        font-size: 2rem;
+        font-size: $font-size-medium;
         margin: 6rem 0;
         @include respond (desk) {
         margin: 9rem 0;
@@ -54,8 +54,8 @@
         }
 
         &__title{
-            font-size: 2.4rem;
-            font-weight: 300;
+            font-size:$font-size-medium;
+            font-weight: 200;
             color: $almost-white;
             margin: 2rem 0;
         }
@@ -63,7 +63,7 @@
             list-style-type: none;
             &-item{
                 margin: 1rem 0;
-                font-size: 1.2rem;
+                font-size: $font-size-small;
                 font-weight: 300;
                 a:link,
                 a:visited{
