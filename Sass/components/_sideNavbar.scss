@@ -1,17 +1,17 @@
 .side-nav{
-    // display: none; // temp
     position: fixed;
+    transition: ease-in .4s;
     z-index: 1000;
-    top: 0;
-    left: 0;
+    transform: translateX(-100%); // temp
+    padding: 2rem 0;
+    width: 65%;
+    max-width: 225px;
     height: 100vh;
-    width: 100vw;
-    background-color: rgba($almost-black,.5);
-    backdrop-filter: blur(10px);
-    visibility: hidden;
-    opacity: 0;
-    transition: ease-in .1s; // ??
-    //
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
     &-close{
         position: absolute;
         top: .5rem;
@@ -22,21 +22,6 @@
             fill: $almost-white;
         }
     }
-    // 
-    &-wrap{
-        transition: ease-in .4s;
-        transform: translateX(-100%); // temp
-        padding: 2rem 0;
-        width: 65%;
-        max-width: 225px;
-        height: 100%;
-        background-color: $primary-color;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        // justify-content: center;
-    }
-    // 
     &__logo{
         width: 100%;
         padding: 2rem;
@@ -46,24 +31,41 @@
         text-align: center;
         border-bottom: 1px solid $almost-white;
     }
-    // 
     &__list{
         padding: 6rem;
         // height: 40%;
         // width: 100%;
-        &-item{
-            width: 100%;
-            margin-bottom: 4rem;
-            list-style: none;
-            font-size: $font-size-small;
-            text-align: center;
-            a:link,
-            a:visited{
-                text-decoration: none;
-                color: $almost-white;
+    &-item{
+        width: 100%;
+        margin-bottom: 4rem;
+        list-style: none;
+        font-size: $font-size-small;
+        text-align: center;
+        a:link,
+        a:visited{
+        text-decoration: none;
+        color: $almost-white;
             }
         }
     }
+}
+
+
+
+// SIDENAVIGATION ACTIVE BACKGROUND
+.side-nav-background{
+    // display: none; // temp
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($almost-black,.4);
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in .1s; // ??
 }
 
 // UNDERLINE STYLE
