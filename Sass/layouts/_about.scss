@@ -12,7 +12,7 @@
     }
     &__content-container{
         margin: 6rem auto;
-        max-width: 45.5rem; // ???
+        max-width: 45.5rem;
         @include respond (tab-land){
             max-width: 75rem;
             margin: 12rem auto 6rem;
@@ -26,9 +26,6 @@
             align-items: center;
             width: 100%;
         }
-        // &-img{
-            
-        // }
         &-text{
             margin-top: 2.5rem;
             font-size: $font-size-small;

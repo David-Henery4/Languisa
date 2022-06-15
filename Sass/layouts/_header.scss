@@ -37,8 +37,7 @@ rgba(21, 172, 202, 0.65)),
     height: 15rem;
     width: 100%;
     max-width: 650px; 
-    // display: flex;
-    overflow: hidden; // WAS ON
+    overflow: hidden;
     position: relative;
   }
   //
@@ -46,11 +45,10 @@ rgba(21, 172, 202, 0.65)),
     height: 100%;
     width: 100%;
     display: grid;
-    position: absolute; // WAS ON
+    position: absolute;
     top: 0;
     left: 0;
     align-content: center;
-    // transition: all 1s; // being added in J.S
   }
   &__title{
     font-weight: 300;

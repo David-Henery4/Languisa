@@ -62,7 +62,7 @@
 
 .burger {
   width: 3.5rem;
-  &__line { // Temp
+  &__line { 
     @include respond (tab-land){
       display: none;
     }
