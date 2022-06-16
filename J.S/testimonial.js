@@ -1,4 +1,3 @@
-console.log("hello its the sidenav");
 
 // TESTIMONIAL SLIDER
 const slides = document.querySelectorAll(".testimonial__slide");
