@@ -5,7 +5,7 @@
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir./dist"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "David Henery",
   "license": "ISC",
@@ -13,5 +13,8 @@
     "@parcel/transformer-sass": "^2.5.0",
     "parcel": "^2.5.0",
     "sass": "^1.52.0"
+  },
+  "dependencies": {
+    "core.js": "^0.4.2"
   }
 }
